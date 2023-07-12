@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBSITE</title>
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -12,13 +14,35 @@
         <div class="navbar">
             <!--hamburger start-->
             <div class="side-bar">
+                <!--menu start-->
                 <div class="menu">
+                    <div class="item">
+                        <a class="sub-btn">WEAVE<i class="dropdown">&#10230</i></a>
+                        <div class="sub-menu">
+                            <a href="#" class="sub-item">PROJECTS</a>
+                            <a href="#" class="sub-item">COMMISSIONS</a>
+                            <a href="#" class="sub-item">DIGILOOM</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a class="sub-btn">DIGITAL<i class="dropdown">&#10230</i></a>
+                        <div class="sub-menu">
+                            <a href="#" class="sub-item">ANIMATIONS</a>
+                            <a href="#" class="sub-item">GENERATED IMAGES</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a class="sub-btn">PHOTO<i class="dropdown">&#10230</i></a>
+                        <div class="sub-menu">
+                            <a href="#" class="sub-item">FLOWERS & FUNGI</a>
+                            <a href="#" class="sub-item">LANDSCAPES</a>
+                        </div>
+                    </div>
                     <div class="item"><a href="#">CRAFT</a></div>
-                    <div class="item"><a href="#">DIGITAL</a></div>
-                    <div class="item"><a href="#">PHOTO</a></div>
                     <div class="item"><a href="#">SKETCH</a></div>
-                    <div class="item"><a href="#">WEAVE</a></div>
+                    <div class="item"><a href="#">ABOUT</a></div>
                 </div>
+                <!--menu end-->
             </div>
             <!--hamburger end-->
             <!--logo start-->
@@ -39,5 +63,14 @@
         <!--navbar end-->
     </div>
     <!--background end-->
+    <!--java toggle sub menus start-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sub-btn').click(function(){
+                $(this).next('.sub-menu').slideToggle();
+            });
+        });
+    </script>
+    <!--java toggle sub menus end-->
 </body>
 </html>

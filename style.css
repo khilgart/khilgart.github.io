@@ -42,6 +42,7 @@
 }
 .decoy img{
     width: 20px;
+    opacity: 0;
 }
 .slide{
     background: rgba(255, 255, 255, 1);

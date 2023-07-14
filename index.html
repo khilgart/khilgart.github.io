@@ -12,65 +12,47 @@
     <div class="background">
         <!--navbar start-->
         <div class="navbar">
-            <!--hamburger start-->
-            <div class="side-bar">
-                <!--menu start-->
-                <div class="menu">
-                    <div class="item">
-                        <a class="sub-btn">WEAVE<i class="dropdown">&#10230</i></a>
-                        <div class="sub-menu">
-                            <a href="#" class="sub-item">PROJECTS</a>
-                            <a href="#" class="sub-item">COMMISSIONS</a>
-                            <a href="#" class="sub-item">DIGILOOM</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a class="sub-btn">DIGITAL<i class="dropdown">&#10230</i></a>
-                        <div class="sub-menu">
-                            <a href="#" class="sub-item">ANIMATIONS</a>
-                            <a href="#" class="sub-item">GENERATED IMAGES</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a class="sub-btn">PHOTO<i class="dropdown">&#10230</i></a>
-                        <div class="sub-menu">
-                            <a href="#" class="sub-item">FLOWERS & FUNGI</a>
-                            <a href="#" class="sub-item">LANDSCAPES</a>
-                        </div>
-                    </div>
-                    <div class="item"><a href="#">CRAFT</a></div>
-                    <div class="item"><a href="#">SKETCH</a></div>
-                    <div class="item"><a href="#">ABOUT</a></div>
-                </div>
-                <!--menu end-->
-            </div>
-            <!--hamburger end-->
+            <!--decoy box start-->
+            <div class="decoy"><img src="logoV3.png"></div>
+            <!--decoy box end-->
             <!--logo start-->
-            <div class="logo">
-                <img src="logoV3.png">
-            </div>
+            <div class="home-logo"><a href="#"><img src="logoV3.png"></a></div>
             <!--logo end-->
-            <!--icons start-->
-            <div class="menu-icons">
+            <!--home-icons start-->
+            <div class="home-icons">
                 <a href="https://instagram.com/karti.4300?igshid=MzNlNGNkZWQ4Mg=="><img src="insta_icon.png"></a>
                 <a href="https://twitter.com/karti4300?t=aqb1JbB62ahwLNGp1m3QWg&s=09"><img src="twitter_icon.png"></a>
                 <!--move github and linkedin to about me page-->
                 <!--<a href="https://github.com/khilgart"><img src="github_icon.png"></a>
                 <a href="https://www.linkedin.com/in/karsten-hilgarth-2023/"><img src="linkedin_icon.png"></a>-->
             </div>
-            <!--icons end-->
+            <!--home-icons end-->
         </div>
         <!--navbar end-->
+        <label>
+            <!--hamburger start-->
+            <input type="checkbox">
+            <div class="toggle">
+                <span class="top_line common"></span>
+                <span class="mid_line common"></span>
+                <span class="bot_line common"></span>
+            </div>
+            <!--hamburger end-->
+            <!--side menu start-->
+            <div class="slide">
+                <div class="menu-logo"><img src="logoV5.png"></div>
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CRAFT</a></li>
+                    <li><a href="#">DIGITAL</a></li>
+                    <li><a href="#">PHOTO</a></li>
+                    <li><a href="#">SKETCH</a></li>
+                    <li><a href="#">WEAVE</a></li>
+                </ul>
+            </div>
+            <!--side menu end-->
+        </label>
     </div>
     <!--background end-->
-    <!--java toggle sub menus start-->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.sub-btn').click(function(){
-                $(this).next('.sub-menu').slideToggle();
-            });
-        });
-    </script>
-    <!--java toggle sub menus end-->
 </body>
 </html>

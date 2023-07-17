@@ -18,7 +18,7 @@
     cursor: pointer;
 }
 .home-logo img {
-    width: 50px;
+    width: 70px;
 }
 .slide {
     background: rgba(255, 255, 255, 1);
@@ -111,6 +111,23 @@ input:checked ~ .slide {
 }
 input:checked ~ .toggle .common {
     background-color: #000;
+}
+.home-icons-container {
+    width: 100%;
+    top: 85%;
+    transform: translateY(-85%);
+    position: absolute;
+    text-align: center;
+}
+.home-icons {
+    cursor: pointer;
+}
+.home-icons img {
+    height: 30px;
+    margin: 0 10px;
+}
+.home-icons img:hover {
+    transform: scale(1.2);
 }
 .ghost-bar {
     position: fixed;

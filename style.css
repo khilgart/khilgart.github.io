@@ -140,9 +140,9 @@ input:checked ~ .toggle .common {
     border-top-style: solid;
     border-bottom-style: solid;
     overflow: hidden;
+    white-space: nowrap;
 }
 .ghost-logos {
-    white-space: nowrap;
     animation: 25s move-rtl infinite linear;
 }
 @keyframes move-rtl {

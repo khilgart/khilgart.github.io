@@ -3,86 +3,52 @@
     padding: 0;
     font-family: sans-serif;
 }
-.background{
+.background {
     width: 100%;
     height: 100vh;
-    background-image: url(test_slide1.jpg);
+    background-color: rgba(0, 0, 0, 1);
     background-size: cover;
     background-position: center;
 }
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.home-logo{
-    flex-basis: 15%;
-    padding-top: 10px;
-}
-.home-logo img{
-    width: auto;
-    cursor: pointer;
-}
-.home-icons{
-    flex: 1;
-    align-items: center;
-    text-align: right;
-    padding-right: 10px;
-}
-.home-icons img{
-    width: 20px;
-    margin-left: 20px;
-    cursor: pointer;
-}
-.decoy {
-    flex: 1;
-    align-items: center;
-    text-align: left;
-    padding-left: 15px;
-}
-.decoy img{
-    width: 20px;
-    opacity: 0;
-}
-.slide{
+/*home logo*/
+.slide {
     background: rgba(255, 255, 255, 1);
     width: 250px;
-    height: 100vh;
+    height: 300px;
     position: fixed;
     top: 0;
     left: 0;
-    overflow-y: auto;
     transition: 0.4s ease;
     transform: translateX(-250px);
 }
-.menu-logo{
+.menu-margin{
     text-align: right;
-    padding: 10px 0;
+    padding: 25px 0;
     padding-right: 20px;
     pointer-events: none;
 }
-ul li{
+ul li {
     list-style: none;
 }
-ul li a{
+ul li a {
     color: #000;
     font-size: 18px;
     display: block;
     width: 100%;
-    padding: 5px 30px;
-    line-height: 50px;
+    padding: 15px 95px;
+    line-height: 20px;
     text-decoration: none;
     transition: 0.2s ease-out;
 }
-ul li:hover a{
+ul li:hover a {
     color: #fff;
     background-color: #000;
 }
-input{
+input {
     display: none;
     visibility: hidden;
 }
-.toggle{
+.toggle {
     position: absolute;
     height: 30px;
     width: 30px;
@@ -92,47 +58,78 @@ input{
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0);
 }
-.toggle .common{
+.toggle .common {
     position: absolute;
     height: 3px;
     width: 20px;
     background-color: #fff;
     transition: 0.2s ease;
 }
-.toggle .top_line{
+.toggle .top_line {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.toggle .mid_line{
+.toggle .mid_line {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.toggle .bot_line{
+.toggle .bot_line {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-input:checked ~ .toggle .top_line{
+input:checked ~ .toggle .top_line {
     left: 2px;
     top: 14px;
     width: 25px;
     transform: rotate(45deg);
 }
-input:checked ~ .toggle .bot_line{
+input:checked ~ .toggle .bot_line {
     left: 2px;
     top: 14px;
     width: 25px;
     transform: rotate(-45deg);
 }
-input:checked ~ .toggle .mid_line{
+input:checked ~ .toggle .mid_line {
     opacity: 0;
     transform: translateX(20px);
 }
-input:checked ~ .slide{
+input:checked ~ .slide {
     transform: translateX(0);
 }
-input:checked ~ .toggle .common{
+input:checked ~ .toggle .common {
     background-color: #000;
+}
+.ghost-bar {
+    position: fixed;
+    top: 95%;
+    transform: translate(0%, -100%);
+    display: flex;
+    justify-content: flext-start;
+    padding: 10px 0;
+    border-color: #fff;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    overflow: hidden;
+}
+.ghost-logos {
+    white-space: nowrap;
+    animation: 25s move-rtl infinite linear;
+}
+@keyframes move-rtl {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.ghost-logos img {
+    height: 50px;
+    margin: 0 45px;
+}
+.footer-text {
+
 }
